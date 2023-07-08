@@ -1,0 +1,23 @@
+.navbar-wrapper {
+  height: 10vh;
+  width: 100vw;
+  position: sticky;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.3rem;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
