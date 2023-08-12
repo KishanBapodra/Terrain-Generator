@@ -1,0 +1,15 @@
+.content {
+  max-width: 35%;
+  font-size: large;
+  text-align: justify;
+}
+
+.content-heading {
+  font-family: "Algreya", serif;
+  margin: 0.75em 0;
+}
+
+.content-body {
+  margin: 0;
+  font-family: "Crimson Text", serif;
+}
