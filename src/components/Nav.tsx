@@ -3,7 +3,9 @@ import styles from "./Nav.module.css";
 const Nav = () => {
   return (
     <nav className={styles["navbar-wrapper"]}>
-      <h2 className={styles["title"]}>DCGAN Terrain Generator</h2>
+      <h2 className={styles["title"]}>
+        Procedural Terrain Generation using Generative AI
+      </h2>
     </nav>
   );
 };

@@ -15,11 +15,11 @@ const Terrain = () => {
     <mesh rotation={[-1.3, 0, 0]}>
       <planeGeometry args={[5, 5, 128, 128]}></planeGeometry>
       <meshStandardMaterial
-        wireframe={material.wireframe}
         attach="material"
-        color="#00a000"
+        color="#003300"
         normalMap={normal}
         displacementMap={elevation}
+        wireframe={material.wireframe}
         displacementScale={material.displacementScale}
       ></meshStandardMaterial>
     </mesh>

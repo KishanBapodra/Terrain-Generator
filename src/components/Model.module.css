@@ -1,0 +1,7 @@
+.model {
+  border-radius: 50px;
+  height: 90%;
+  width: 50%;
+  background-color: #444;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
