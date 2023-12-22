@@ -8,8 +8,10 @@ function App() {
     <>
       <Nav></Nav>
       <section className={styles["sec-1"]}>
-        <Main />
         <Model />
+      </section>
+      <section className={styles["sec-2"]}>
+        <Main />
       </section>
     </>
   );

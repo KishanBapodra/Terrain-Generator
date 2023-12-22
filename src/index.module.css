@@ -6,7 +6,12 @@
 
   /* color-scheme: light dark; */
   color: rgba(255, 255, 255, 0.87);
-  background-color: #333;
+
+  --primary: #8d8741;
+  --secondary: #659dbd;
+  --tertiary: #daad86;
+  --quaternary: #bc986a;
+  --quinary: #fbeec1;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,4 +25,5 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--primary);
 }
