@@ -9,7 +9,7 @@ const Model = () => {
       <Canvas camera={{ fov: 75, near: 0.1, far: 500, position: [0, 0, 4] }}>
         <OrbitControls enableZoom={false} />
         <ambientLight />
-        <pointLight position={[0, 0, 0]} />
+        <pointLight position={[-10, 0, 20]} />
         <Terrain />
       </Canvas>
     </div>
