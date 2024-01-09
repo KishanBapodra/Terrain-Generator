@@ -1,21 +1,23 @@
+import { useRef, RefObject } from "react";
 import * as THREE from "three";
+import { Mesh, BufferGeometry, Material, NormalBufferAttributes } from "three";
 import { useLoader, useFrame } from "@react-three/fiber";
 import { useControls } from "leva";
-import { useRef } from "react";
-import getNormalMap from "../helpers/getNormal";
+// import getNormalMap from "../helpers/getNormal";
 
 const Terrain = () => {
-  const modelRef = useRef();
+  const modelRef: RefObject<
+    Mesh<BufferGeometry<NormalBufferAttributes>, Material | Material[]>
+  > = useRef();
 
   // const elevation = useLoader(THREE.TextureLoader, "src/assets/elevation.png");
-  const elevation2 = useLoader(
-    THREE.TextureLoader,
-    "src/assets/elevation2.png"
-  );
-  const normal = useLoader(THREE.TextureLoader, "src/assets/normal.png");
-  const normal2 = useLoader(THREE.TextureLoader, "src/assets/normal2.png");
+  const elevation2 = useLoader(THREE.TextureLoader, "/elevation2.png");
+  // const normal = useLoader(THREE.TextureLoader, "src/assets/normal.png");
+  const normal2 = useLoader(THREE.TextureLoader, "/normal2.png");
   useFrame(({ clock }) => {
-    modelRef.current.rotation.z = clock.getElapsedTime() / 5;
+    if (modelRef.current) {
+      modelRef.current.rotation.z = clock.getElapsedTime() / 5;
+    }
   });
   const material = useControls({
     wireframe: true,
