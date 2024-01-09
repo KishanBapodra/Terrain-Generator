@@ -1,14 +1,50 @@
 .sec-1 {
-  height: 78vh;
-  width: 100vw;
+  height: 97vh;
+  margin: 1.5rem 3rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
+.header {
+  padding-right: 1em;
+  color: black;
+}
+
+.title {
+  margin: 0;
+  font-family: "Alegreya", serif;
+  font-size: 2.75em;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.desc {
+  margin: 0.8em 0;
+  font-size: 1.25em;
+  font-family: "Alegreya", serif;
+}
+
 .sec-2 {
-  height: 99vh;
+  height: 90vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.github {
+  color: black;
+  padding: 0 0.5rem;
+}
+
+.dataset {
+  color: black;
+  padding: 0 0.5rem;
+}
+
+.sec-3 {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  font-size: 1.5rem;
 }
